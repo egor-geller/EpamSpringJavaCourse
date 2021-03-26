@@ -1,8 +1,10 @@
-import Entity.MyModule;
-import Services.Define;
-import Services.Search;
+import by.geller.project.Entity.MyModule;
+import by.geller.project.Services.Define;
+import by.geller.project.Services.Search;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
-import Services.ChangeElements;
+import by.geller.project.Services.ChangeElements;
 
 @Test
 public class FirstTest {
@@ -10,6 +12,8 @@ public class FirstTest {
     ChangeElements changeElements = new ChangeElements();
     Define define = new Define();
     Search search = new Search();
+
+    static Logger logger = LogManager.getLogger();
 
     @Test
     public void data(){
@@ -19,6 +23,7 @@ public class FirstTest {
         System.out.println(myModule);
 
         changeElements.changeElementInPosition(arr, 2, 10);
+        logger.error("error message");
 
 
         System.out.println("Average number is: " + define.average(arr));

@@ -1,10 +1,9 @@
-package Services;
+package by.geller.project.Services;
 
 public class Define {
     public int sumOfAllNumbers(int[] arr){
         int sum = 0;
-        for (int i :
-                arr) {
+        for (int i : arr) {
             sum += i;
         }
         return sum;
@@ -28,8 +27,7 @@ public class Define {
 
     public int countNegativeNumbers(int[] arr){
         int count = 0;
-        for (int i :
-                arr) {
+        for (int i : arr) {
             if (i < 0) {
                 count++;
             }

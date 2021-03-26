@@ -1,4 +1,4 @@
-package Entity;
+package by.geller.project.Entity;
 
 import java.util.Arrays;
 
