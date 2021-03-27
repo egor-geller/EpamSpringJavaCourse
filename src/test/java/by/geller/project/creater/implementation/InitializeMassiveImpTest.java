@@ -1,8 +1,8 @@
-package creator.implementation;
+package by.geller.project.creater.implementation;
 
 import by.geller.project.Entity.MyModule;
-import creater.exeptions.IOExceptionInitArray;
-import creater.implementation.InitializeMassiveImp;
+import by.geller.creater.exeptions.IOExceptionInitArray;
+import by.geller.creater.implementation.InitializeMassiveImp;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;

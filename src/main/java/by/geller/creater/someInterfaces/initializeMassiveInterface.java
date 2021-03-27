@@ -1,6 +1,4 @@
-package creater.someInterfaces;
-
-import creater.exeptions.IOExceptionInitArray;
+package by.geller.creater.someInterfaces;
 
 import java.io.IOException;
 

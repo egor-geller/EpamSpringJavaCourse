@@ -1,15 +1,11 @@
-package creater.implementation;
+package by.geller.creater.implementation;
 
-import creater.exeptions.IOExceptionInitArray;
-import creater.someInterfaces.initializeMassiveInterface;
+import by.geller.creater.exeptions.IOExceptionInitArray;
+import by.geller.creater.someInterfaces.initializeMassiveInterface;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class InitializeMassiveImp implements initializeMassiveInterface {
     @Override

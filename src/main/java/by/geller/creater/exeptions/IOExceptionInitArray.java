@@ -1,4 +1,4 @@
-package creater.exeptions;
+package by.geller.creater.exeptions;
 
 import java.io.IOException;
 
