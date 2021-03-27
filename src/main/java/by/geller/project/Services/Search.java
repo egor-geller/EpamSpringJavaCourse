@@ -4,12 +4,10 @@ import java.util.Arrays;
 
 public class Search {
     public int min(int[] arr){
-        Arrays.sort(arr);
-        return arr[0];
+        return 0;
     }
 
     public int max(int[] arr){
-        Arrays.sort(arr);
-        return arr[arr.length - 1];
+        return 0;
     }
 }

@@ -3,35 +3,50 @@ package by.geller.project.Entity;
 import java.util.Arrays;
 
 public class MyModule {
-    private int n;
-    private int[] myArray;
+    private int[] firstArray;
+    private Integer[] integersMethodOfArrays;
 
-    public MyModule(int i, int[] arr){
-        this.n = i;
-        this.myArray = arr;
+    public MyModule() {
+
     }
 
-    public int getN() {
-        return n;
+    public MyModule(int[] array) {
+        this.firstArray = array;
+    }
+
+    public MyModule(Integer[] integers) {
+        this.integersMethodOfArrays = integers;
     }
 
     public int[] getMyArray() {
-        return myArray;
+        return firstArray;
     }
 
-    public void setN(int n) {
-        this.n = n;
+    public Integer[] getIntegersMethodOfArrays() {
+        return integersMethodOfArrays;
     }
 
     public void setMyArray(int[] myArray) {
-        this.myArray = myArray;
+        this.firstArray = myArray;
+    }
+
+    public void setIntegersMethodOfArrays(Integer[] integersMethodOfArrays) {
+        this.integersMethodOfArrays = integersMethodOfArrays;
     }
 
     @Override
     public String toString() {
         return "Module{" +
-                "n=" + n +
-                ", myArray=" + Arrays.toString(myArray) +
+                "myArray=" + Arrays.toString(firstArray) +
                 '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return this.hashCode();
+    }
+
+    public boolean equals(MyModule diffModule) {
+        return Arrays.equals(this.getMyArray(), diffModule.getMyArray());
     }
 }
