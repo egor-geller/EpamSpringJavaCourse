@@ -1,4 +1,4 @@
-package by.geller.project.Entity;
+package by.geller.toIntStreamImplementation.Entity;
 
 import java.util.Arrays;
 
