@@ -1,9 +1,10 @@
 package by.geller.project.exception;
 
-public class EmptyArrayException extends Exception{
-    public EmptyArrayException(){}
+public class EmptyArrayException extends Exception {
+    public EmptyArrayException() {
+    }
 
-    public EmptyArrayException(String input){
+    public EmptyArrayException(String input) {
         super(input);
     }
 }

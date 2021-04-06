@@ -11,15 +11,15 @@
                 <Pattern>%d [%t] %p %c - %m%n</Pattern>
             </PatternLayout>
             <Policies>
-                <SizeBasedTriggeringPolicy size="250 KB" />
+                <SizeBasedTriggeringPolicy size="250 KB"/>
             </Policies>
-            <DefaultRolloverStrategy max="20" />
+            <DefaultRolloverStrategy max="20"/>
         </RollingFile>
     </Appenders>
     <Loggers>
         <Root level="INFO">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="RollingFileAppender" level="INFO" />
+            <AppenderRef ref="RollingFileAppender" level="INFO"/>
         </Root>
     </Loggers>
 </Configuration>

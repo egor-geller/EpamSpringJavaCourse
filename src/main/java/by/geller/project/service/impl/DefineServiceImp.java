@@ -1,13 +1,13 @@
-package by.geller.project.implementation;
+package by.geller.project.service.impl;
 
-import by.geller.project.services.Define;
-import by.geller.project.entity.Massive;
+import by.geller.project.entity.BlockOfNumbers;
 import by.geller.project.exception.EmptyArrayException;
+import by.geller.project.service.DefineService;
 
-public class DefineImp implements Define {
+public class DefineServiceImp implements DefineService {
     @Override
-    public int sumOfAllNumbers(Massive massive) throws EmptyArrayException {
-        int[] arr = massive.getMyArray();
+    public int sumOfAllNumbers(BlockOfNumbers blockOfNumbers) throws EmptyArrayException {
+        int[] arr = blockOfNumbers.getMyArray();
 
         if (arr.length < 2) {
             throw new EmptyArrayException();
@@ -21,17 +21,17 @@ public class DefineImp implements Define {
     }
 
     @Override
-    public int average(Massive massive) throws EmptyArrayException {
-        int sum = sumOfAllNumbers(massive);
-        int[] arr = massive.getMyArray();
+    public int average(BlockOfNumbers blockOfNumbers) throws EmptyArrayException {
+        int sum = sumOfAllNumbers(blockOfNumbers);
+        int[] arr = blockOfNumbers.getMyArray();
         int avg = sum / arr.length;
 
         return avg;
     }
 
     @Override
-    public int countPositiveNumbers(Massive massive) throws EmptyArrayException {
-        int[] arr = massive.getMyArray();
+    public int countPositiveNumbers(BlockOfNumbers blockOfNumbers) throws EmptyArrayException {
+        int[] arr = blockOfNumbers.getMyArray();
 
         if (arr.length < 2) {
             throw new EmptyArrayException();
@@ -47,8 +47,8 @@ public class DefineImp implements Define {
     }
 
     @Override
-    public int countNegativeNumbers(Massive massive) throws EmptyArrayException {
-        int[] arr = massive.getMyArray();
+    public int countNegativeNumbers(BlockOfNumbers blockOfNumbers) throws EmptyArrayException {
+        int[] arr = blockOfNumbers.getMyArray();
 
         if (arr.length < 2) {
             throw new EmptyArrayException();

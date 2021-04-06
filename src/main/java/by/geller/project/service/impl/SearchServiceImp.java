@@ -1,13 +1,13 @@
-package by.geller.project.implementation;
+package by.geller.project.service.impl;
 
-import by.geller.project.services.Search;
-import by.geller.project.entity.Massive;
+import by.geller.project.entity.BlockOfNumbers;
 import by.geller.project.exception.EmptyArrayException;
+import by.geller.project.service.SearchService;
 
-public class SearchImp implements Search {
+public class SearchServiceImp implements SearchService {
     @Override
-    public int min(Massive massive) throws EmptyArrayException {
-        int[] arr = massive.getMyArray();
+    public int min(BlockOfNumbers blockOfNumbers) throws EmptyArrayException {
+        int[] arr = blockOfNumbers.getMyArray();
 
         if (arr.length < 2) {
             throw new EmptyArrayException();
@@ -23,8 +23,8 @@ public class SearchImp implements Search {
     }
 
     @Override
-    public int max(Massive massive) throws EmptyArrayException {
-        int[] arr = massive.getMyArray();
+    public int max(BlockOfNumbers blockOfNumbers) throws EmptyArrayException {
+        int[] arr = blockOfNumbers.getMyArray();
 
         if (arr.length < 2) {
             throw new EmptyArrayException();
